@@ -1,0 +1,81 @@
+/* Author: Haley Sherwood-Coombs */
+/* Date: 05/31/15 */
+/* Works Cited: Udacity, Udacity coaches, Udacity 'Intro to Programming' Nanodegree material */
+/* This is a CSS file appropriately named Style.css */
+/* CSS is used for all pages to avoid repetition */
+/* When needed divider tags where used to specify specific styles per divide */
+
+/* Divider for h1 used on the home page */
+/* specific style of h1 tag on frontpage */
+.frontPage {
+	font-family: Helvetica, "Helvetica Neue";
+	font-weight: lighter;
+}
+
+.frontPage h1 {
+	text-transform: uppercase;
+
+	/* left and bottom styles used to position the h1 element in the right bottom */
+	left: 20%;
+	bottom: 25%;
+	position: absolute;
+	font-size: 72px;
+}
+
+/* specific style of h3 tag on frontpage or "home" page */
+.frontPage h3 {
+	/* left and bottom styles used to position the h3 element under the h1 in the right bottom */
+	left: 20%; 
+	bottom: 20%;
+	position: absolute;
+	font-style: italic;
+	font-size: 32px;
+}
+
+/* General format for h1 tags used on any page */
+h1 {
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-align: center;
+}
+
+/* General format for all h2,h4,h5 tags used on any page */
+h2, h4, h5 {
+	font-style: italic;
+	padding: 10px;
+}
+
+/* Divider used on navigation element so that the navigation would 
+not have bullet points while the rest of elements using the ul tag would */
+.nav ul {
+	list-style-type: none;
+}
+
+/* Divider tag used on navigation to add color to the links */
+.nav a{
+	color: #2F3540;
+}
+
+/* Navigation style */
+.nav{
+	line-height: 30px;
+	background-color: #D9D1C7;
+	width: 125px;
+	float: right;
+	position: fixed;
+	margin: 0px; 
+	top: 0px; /* To have the background color box go all the way to the top with no white space */
+	left: 0px; /* To have the background color box go all the way to the top with no white space */
+	bottom: 0px; /* To have the background color box go all the way to the top with no white space */
+
+}
+
+/* control background color, font and margin on all pages */
+/* margin is especially important so that the navigation element doesnt run over body text */
+body{
+	font-family: Helvetica, "Helvetica Neue", Arial, Verdana, sans-serif;
+	font-weight: lighter;
+	background-color: #FFFFFF;
+	margin-left: 130px;
+}
+

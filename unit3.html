@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Part 3</title>
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+
+ <body> 
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="unit1.html">Unit 1</a></li>
+        <li><a href="unit2.html">Unit 2</a></li>
+        <li><a href="unit3.html">Unit 3</a></li>
+      </ul>
+    </div>
+    
+    <h1>Lesson 3: Telling Computers what to Do</h1>
+    
+    <div class="concept">
+        <div class="lesson-title"> <h2>
+           Introduction to Serious Programming </h2>
+         </div>
+    <div class="lesson-description">
+        It is a foolish assumption to think that computers are intelligent. It is actually the
+engineers of these computers that are responsible for creating a series of programs to interpret human
+commands. Python is a high level programming language- that is its code closer resembles a human language
+as apposed to machine language. Python forms <b>backus naur form</b> where expressions may take the similar
+form of a sentance: subject + verb + object. 
+
+    </div>
+</div>
+<div class="concept">
+    <div class="lesson-title"> <h2>
+        Variables and Strings </h2>
+    </div>
+    <div class="lesson-description">
+        Variables enable a link between names and values to avoid repetition and avoiod confusion. 
+Variables are assigned to values through an assigment: <br>
+my_variable = 200 ---> you would read this as "my_variable gets 200". 
+
+    </div>
+</div>
+<div class="concept">
+    <div class="lesson-title"> <h2>
+        Input --> Function --> Output  </h2>
+    </div>
+    <div class="lesson-description">
+        A function is something that may or may not take input, performs an action (or many), and produces a result. Functions
+are defined by the keyword <b>'def():'</b>. Here are some examples:<br><br>
+def hello(name):
+    return "Hello " + name + "!"
+
+    <i>Above we have defined the function Hello. Next, we will call function hello. </i>
+
+print hello('world') 
+    <i>The function should return: Hello world!</i>
+<br>Hint: In python the characters ' and " can be used interchangeably 
+<br><b>Why use functions?</b> Good question! Using functions are good programming practice. Functions reduce reptition and make
+code more understandable to all members reading it. Functions are also the first stepping stones to object oriented programming. 
+
+    </div>
+</div>
+<div class="concept">
+    <div class="lesson-title"> <h2>
+        Control Flow Loops </h2>
+    </div>
+    <div class="lesson-description">
+        Procedural thinking is an impportant mind set for a good programmer. It is impportant to think about repetition and 
+decision making when desiging your code, procedural thinking helps exactly with this. A common way to tackle large programs is to 
+implement loops like the 'if' and 'while' loops. <br> <br>
+The common syntax for the <b>IF statement</b> is: <br>
+if &lt;test expression&gt;: <br>
+&lt;block&gt;
+
+<br> The if statement is great in situations when you are testing if an expression meets a requirement. Where as, the <b>while</b> statement 
+while continue executing until a condition failes. Below is the basic syntax: <br><br>
+    While &lt;test expression&gt;:<br>
+    &lt;block&gt;
+
+    </div>
+</div>
+<div class="concept">
+    <div class="lesson-title"> <h2>
+        Debugging </h2>
+    </div>
+    <div class="lesson-description">
+        There are five strategies commonly used in debugging a programming: <br>
+<ol>
+    <li>Examine error messages when programs crash</li>
+    <li>Work from example code </li>
+    <li>Make sure examples work </li>
+    <li>Check (print) intermediate results </li>
+    <li>Keep and compare old versions </li>
+</ol>
+
+    </div>
+</div>
+<div class="concept">
+    <div class="lesson-title"> <h2>
+        Structured Data: Lists, Loops, and Strings </h2>
+    </div>
+    <div class="lesson-description">
+        A <b>string</b> is considered a type of structured data because it can be broke down into characters and operate
+on sub-sequences among itself. Lists, in comparison, are more powerful. <b>Lists</b>, another type of structured data, can handle multiple
+data types (characters, strings, numbers, even other lists). To declare a list you declare: <br><br>
+myList = ['h','e','l','l','o','!'] <br> 
+and to access a specific element you would write<br>
+myList[0] <i> it is important to rember that lists begin with element 0</i>. So myList[0] would point to the letter 'h'. <br><br>
+Lists are also considered <b>mutable</b> (lists are not). When someone says a list is mutable it means it can be mutated in 
+various methods. As example we can change the variable of element 5 in our myList sequence: <br><br>
+myList[5] =  '~' <br><br>
+We can also get funky and nest lists!<br>
+Example: <br><br>
+inventory = [['apples', 2],
+            ['bananas',6],
+            ['oranges', 3]]
+<br><br>
+We can also perform a substantial number of <b>list operations</b> with our lists. <br>
+<ol>
+    <li>Append: The append method adds a new element to the end of a list. 
+    The append method mutates the list that it is invoked on, it does not create a new list. </li>
+    <li>Concatenation: The + operator can be used with lists and is very similar to how it is used to 
+    concatenate strings. It produces a new list, it does not mutate either of the input lists. </li>
+    <li>Len: The len operator can be used to find out the length of an object. The len operator works 
+    for many things other than lists, it works for any object that is a collection of things 
+    including strings. The output from len is the number of elements in its input. </li>
+    <li>While: Since lists are collections of things, it is very useful to be able to go through a list 
+    and do something with every element. </li>
+    <li>Index: The index method is invoked on a list by passing in a value, and the output is the first 
+    position where that value sits in the list. If the list that does not contain any occurrences of the 
+    value you 17 pass in, index produces an error (this is different from the find method for strings 
+    which we used in Unit 1, that returns a -1 when the target string is not found).</li>
+</ol>
+
+    </div>
+</div>
+<div class="concept">
+    <div class="lesson-title"> <h2>
+        How to Solve Problems </h2>
+    </div>
+    <div class="lesson-description">
+        Mastering procedural thinking and debugging are important for all programmers but successful 
+programmers systematically aproach solving problems. Here are some steps to get started: <br>
+<ol>
+    <li>What are the inputs? <br> First make sure you understand the problem (even if you don't know how to 
+        translate it to computer language)- what are the inputs and outputs. <br></li>
+    <li>How are inputs/outputs represented? <br> What form is the form of the input(s) and output(s)? Does the input
+    morph or change data types before being outputted? <br></li>
+    <li>Solve the problem: <br> Its a good idea to first break your problem up into baby-steps even if you have succesfully
+    completed all the aforementioned steps, consider writing pseudo-code to bring your ideas together. Another practice is to 
+    work out some examples to test your methods. <br></li>
+    <li>Consider systematically how a human solves the problem and dont optimize prematurely</li>
+</ol>
+
+    </div>
+</div>
+
+    </body>
+    </html>
